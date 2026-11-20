@@ -14,7 +14,7 @@
 </header>
 <main>
 <h1>Privacy Policy</h1>
-<p class="meta">Game Theory: Nash Equilibrium (iOS) · Effective date: 19 November 2026</p>
+<p class="meta">Game Theory: Nash Equilibrium (iOS) · Effective date: 20 November 2026</p>
 
 <div class="summary">
 <strong>In short:</strong> the app has no accounts and no analytics tools of its own, and we never sell your
@@ -26,7 +26,10 @@ and usage information to show, measure and, depending on where you live and on y
 section 4). The app never shows ads on its own and never shows them to Full Access owners. From version 1.2.2, iOS
 may ask before the first ad whether the app can track you across other companies’ apps and websites; the ad plays
 whatever you answer. Its other connection is to
-Apple’s App Store, to show the price of Full Access and to process and verify the purchase.
+Apple’s App Store, to show the price of Full Access and to process and verify the purchase. From version 2.0,
+class sessions connect nearby devices directly, without the internet, and keep nothing afterwards (section 5),
+and <em>Turn a situation into a game</em> reads what you type with Apple Intelligence on your device, without
+sending or saving it (section 6).
 </div>
 
 <h2>1. Who we are</h2>
@@ -48,7 +51,8 @@ device</strong>:</p>
 </ul>
 <p>This information is never sent to us or to anyone else by the App, and we have no way to access it. It is
 deleted when you delete the App. Like the data of any app, it may be included in the backups you make of your
-device (for example iCloud Backup), under Apple’s terms.</p>
+device (for example iCloud Backup), under Apple’s terms. The App does not save class sessions or the
+descriptions you type in <em>Turn a situation into a game</em> (sections 5 and 6).</p>
 
 <h2>3. The Full Access purchase</h2>
 <p>Some content is unlocked by a one-time in-app purchase called Full Access. Apple processes the payment; we
@@ -60,7 +64,8 @@ that show how many purchases were made in which country, but not who made them.<
 <h2>4. Rewarded ads (Google AdMob)</h2>
 <p>Without Full Access, one use of a paid feature can be unlocked by watching one short ad to the end (a “rewarded
 ad”): one solve in the Solver (from version 1.6 also the full solution of an unlimited-practice game) and, from
-version 1.7, one visit to a locked repeated game. Ads appear only after you tap <em>Watch an ad</em>; the App shows no banners and no ads
+version 1.7, one visit to a locked repeated game, and from version 2.0, one visit to the auction simulator or
+one class session that you host. Ads appear only after you tap <em>Watch an ad</em>; the App shows no banners and no ads
 when it starts. The ads are provided by Google AdMob (Google Ireland Limited in the EEA, the UK and Switzerland,
 Google LLC elsewhere). If you never tap that button, or if you own Full Access, the App does not start the ad
 service at all. Once you have tapped it, the App may load the next ad in advance, for example when you press
@@ -101,19 +106,46 @@ vendors changes if you delete all of our apps from your device and later reinsta
 shown and the earnings, by country and day. Google may process the information on servers outside Türkiye and
 outside your country.</p>
 
-<h2>5. Sharing a solution</h2>
+<h2>5. Playing with your class (from version 2.0)</h2>
+<p>With <em>Play with your class</em>, one device hosts a session and nearby devices join it with a four-digit
+code. The devices find and reach each other directly, over the local network or a direct Wi-Fi link between them
+(Apple’s Bonjour and peer-to-peer Wi-Fi); no internet connection, server or account is used, and nothing passes
+through us. iOS asks whether the App may find devices on your local network the first time you host or join; you
+can change this in Settings &gt; Privacy &amp; Security &gt; Local Network.</p>
+<p>Nobody types a name: players are numbered in the order they join. During a session the devices exchange only
+what the game needs: the game being played, each player’s number, the answers (a whole number from 0 to 100, or a
+strategy) and the results. The session is announced on the local network under its code, so anyone nearby who has
+the App can find and join it. The connection is encrypted with a key derived from that code: this keeps sessions
+apart, but it does not hide a session from people nearby, so do not use it for anything secret. Because players are
+only numbered and only the game is exchanged, a session contains nothing that identifies anyone. The App keeps
+nothing after a session: no answers, results or information about the
+devices are saved on the host’s or the players’ devices, and nothing is sent to us. Joining a session is free and
+never shows an ad; hosting one without Full Access is unlocked by one ad, which opens one session (section 4).</p>
+
+<h2>6. Turn a situation into a game: Apple Intelligence (from version 2.0)</h2>
+<p>On devices where Apple Intelligence is available and turned on, you can type a description of a situation and
+ask Apple’s on-device language model (Apple’s Foundation Models framework) to suggest the two players and their
+choices. The App gives the model only the text you typed. The model runs on your device: the App sends the text to
+no one, not to us and not to Google, and does not save it; it is gone when you leave the page. The suggestion is
+only a starting point that you can change. It is written automatically, can be wrong and is not checked by us; how
+good each outcome is, you decide yourself, and the game is solved by the App’s own exact solver. You can always
+fill in the page by hand instead. If you open the game in the Solver, its names and choices are saved there like
+any game you edit (section 2). How Apple handles Apple Intelligence is described in
+<a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>.</p>
+
+<h2>7. Sharing a solution</h2>
 <p>When you tap <em>Share</em>, the App hands the text of the solution to the iOS share sheet. You decide where
 it goes (for example Messages, Mail or Notes). The privacy policy of the app or service you choose applies to
 what you send. The App itself does not send anything.</p>
 
-<h2>6. Information Apple may provide to us</h2>
+<h2>8. Information Apple may provide to us</h2>
 <p>Apple provides developers with aggregated statistics about their apps (for example the number of downloads).
 If you have chosen in your device settings to share analytics with app developers, Apple may also provide
 crash reports and usage statistics. We cannot identify you from this information, and it is processed by Apple
 under <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>. We use it only to find and fix
 problems.</p>
 
-<h2>7. If you contact us by email</h2>
+<h2>9. If you contact us by email</h2>
 <p>If you write to us, we receive your email address and whatever your message contains. We use them only to
 answer you and to fix the problems you report, based on our legitimate interest in responding to your request
 (Article 5(2)(f) of the Turkish Personal Data Protection Law No. 6698, “KVKK”; Article 6(1)(f) GDPR). We do
@@ -122,13 +154,14 @@ needed, and at the latest two years after our last message. We receive email thr
 Google, which may store messages on servers outside Türkiye. Please do not send sensitive personal
 information.</p>
 
-<h2>8. Children</h2>
+<h2>10. Children</h2>
 <p>The App is rated 18+ on the App Store because the optional ads may include content for mature audiences.
-It is not directed at children, and the App sends us no personal information about anyone. Ads appear only when
+It is not directed at children, and the App sends us no personal information about anyone. Joining a class
+session never shows an ad. Ads appear only when
 the user asks for one, and any ad can be reported with <em>Report an inappropriate ad</em> in the App. If a
 child writes to us, we use the address only to reply and then delete the conversation.</p>
 
-<h2>9. Your rights</h2>
+<h2>11. Your rights</h2>
 <p>We do not hold personal data from the App, so there is normally nothing for us to access, correct or
 delete. For data that Google collects when an ad is shown, use <em>Ad privacy choices</em> in the App where it applies
 (see section 4), or contact Google through the pages linked in section 4. For any email conversation with us, you may exercise the rights granted to you by law, including the
@@ -139,21 +172,23 @@ Authority (Kişisel Verileri Koruma Kurumu) or with the data protection authorit
 California residents: we do not sell personal information; for ads, the opt-out described in section 4
 applies.</p>
 
-<h2>10. Security</h2>
+<h2>12. Security</h2>
 <p>The App does not transmit the games you enter or your progress to us or to anyone else; they stay on your
-device, and the results of a solve may be passed to your own paired Apple Watch. Purchase
+device, and the results of a solve may be passed to your own paired Apple Watch. Class sessions run directly
+between nearby devices; they are encrypted, but not hidden from people nearby (section 5). Purchase
 records are exchanged only between your device and Apple over Apple’s encrypted connection. Ad requests go from
 your device to Google over an encrypted connection, and an ad’s content may come from the servers of Google or of
 the ad companies that work with it. Data stored on your
 device is protected by iOS and by your device passcode.</p>
 
-<h2>11. Changes to this policy</h2>
+<h2>13. Changes to this policy</h2>
 <p>If this policy changes, we will publish the new version on this page and update the effective date. If what
 the App collects changes, we will update this policy and the App Store privacy information before that version is
 released. The version of 30 October 2026 added the optional rewarded ads (section 4); this version describes ad
-partners, cookies and similar technologies, and your choices in more detail.</p>
+partners, cookies and similar technologies, and your choices in more detail. From version 2.0 it also
+describes class sessions (section 5) and <em>Turn a situation into a game</em> (section 6).</p>
 
-<h2>12. Contact</h2>
+<h2>14. Contact</h2>
 <p>BME Apps · <a href="mailto:bme.support.univ@gmail.com">bme.support.univ@gmail.com</a></p>
 </main>
 <footer>

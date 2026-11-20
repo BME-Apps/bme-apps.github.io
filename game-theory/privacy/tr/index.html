@@ -14,7 +14,7 @@
 </header>
 <main>
 <h1>Gizlilik Politikası</h1>
-<p class="meta">Game Theory: Nash Equilibrium (iOS) · Yürürlük tarihi: 19 Kasım 2026</p>
+<p class="meta">Game Theory: Nash Equilibrium (iOS) · Yürürlük tarihi: 20 Kasım 2026</p>
 
 <div class="summary">
 <strong>Kısaca:</strong> Uygulamada hesap ve kendine ait bir analiz aracı yoktur; verilerinizi hiçbir zaman
@@ -26,7 +26,9 @@ göre kişiselleştirmek için cihaz ve kullanım bilgileri toplayabilir (bkz. 4
 hiçbir zaman reklam göstermez ve Tam Erişim sahiplerine reklam göstermez. 1.2.2 sürümünden itibaren iOS, ilk reklamdan
 önce Uygulamanın sizi başka şirketlerin uygulama ve web sitelerinde takip edip edemeyeceğini sorabilir; reklam,
 cevabınız ne olursa olsun oynar. Diğer bağlantısı, Tam Erişim’in fiyatını göstermek ve satın alımı yürütüp doğrulamak
-için Apple App Store’adır.
+için Apple App Store’adır. 2.0 sürümünden itibaren sınıf oturumları yakındaki cihazları internetsiz, doğrudan
+birbirine bağlar ve sonrasında hiçbir şey saklamaz (5. bölüm); <em>Durumunu oyuna çevir</em> de yazdıklarınızı
+cihazınızdaki Apple Intelligence ile okur, göndermez ve saklamaz (6. bölüm).
 </div>
 
 <h2>1. Biz kimiz</h2>
@@ -48,7 +50,8 @@ cihazınızda</strong> saklar:</p>
 </ul>
 <p>Bu bilgiler Uygulama tarafından bize veya başka birine hiçbir zaman gönderilmez; bunlara erişmemizin bir yolu
 yoktur. Uygulamayı sildiğinizde silinirler. Her uygulamanın verisi gibi, cihazınızın yedeklerine (örneğin iCloud
-Yedekleme) Apple’ın koşulları çerçevesinde dahil olabilirler.</p>
+Yedekleme) Apple’ın koşulları çerçevesinde dahil olabilirler. Uygulama sınıf oturumlarını ve <em>Durumunu oyuna
+çevir</em>’e yazdığınız anlatımları saklamaz (5. ve 6. bölüm).</p>
 
 <h2>3. Tam Erişim satın alımı</h2>
 <p>Bazı içerikler, Tam Erişim adlı tek seferlik bir uygulama içi satın alımla açılır. Ödemeyi Apple işler; ödeme
@@ -60,7 +63,8 @@ satın alım yapıldığını gösteren satış raporları gönderir; kimin sat�
 <h2>4. Ödüllü reklamlar (Google AdMob)</h2>
 <p>Tam Erişim’iniz yoksa ücretli bir özelliğin bir kullanımının kilidi, kısa bir reklamın sonuna kadar
 izlenmesiyle açılabilir (“ödüllü reklam”): Çözücü’de bir çözüm (1.6 sürümünden itibaren sınırsız alıştırmadaki bir
-oyunun tam çözümü de) ve 1.7 sürümünden itibaren kilitli bir tekrarlı oyuna bir kez girmek. Reklamlar yalnızca <em>Reklam izle</em>’ye dokunduğunuzda gösterilir; Uygulama
+oyunun tam çözümü de), 1.7 sürümünden itibaren kilitli bir tekrarlı oyuna bir kez girmek ve 2.0 sürümünden
+itibaren açık artırma simülatörüne bir kez girmek ya da bir sınıf oturumu açmak. Reklamlar yalnızca <em>Reklam izle</em>’ye dokunduğunuzda gösterilir; Uygulama
 banner reklam göstermez ve açılışta reklam göstermez. Reklamları Google AdMob sağlar (AEA, Birleşik Krallık ve
 İsviçre’de Google Ireland Limited, diğer yerlerde Google LLC). Bu düğmeye hiç dokunmazsanız veya Tam Erişim’e
 sahipseniz Uygulama reklam hizmetini hiç başlatmaz. Düğmeye bir kez dokunduktan sonra, Uygulama tamamen kapanana kadar
@@ -106,19 +110,47 @@ sonra birini yeniden yüklediğinizde değişir.</p>
 sayısı ve kazanç gibi toplamları gönderir. Google bu bilgileri Türkiye dışındaki ve sizin ülkeniz dışındaki
 sunucularda işleyebilir.</p>
 
-<h2>5. Bir çözümü paylaşmak</h2>
+<h2>5. Sınıfla oynamak (2.0 sürümünden itibaren)</h2>
+<p><em>Sınıfla oyna</em> ile bir cihaz oturum açar, yakındaki cihazlar da dört haneli bir kodla bu oturuma katılır.
+Cihazlar birbirini yerel ağ üzerinden ya da aralarındaki doğrudan Wi-Fi bağlantısıyla (Apple’ın Bonjour’u ve
+eşler arası Wi-Fi) doğrudan bulur ve birbirine bağlanır; internet bağlantısı, sunucu veya hesap kullanılmaz ve hiçbir
+şey bizden geçmez. Oturum ilk kez açıldığında ya da bir oturuma ilk kez katılındığında iOS, Uygulamanın yerel
+ağınızdaki cihazları bulup bulamayacağını sorar; bunu Ayarlar &gt; Gizlilik ve Güvenlik &gt; Yerel Ağ bölümünden
+değiştirebilirsiniz.</p>
+<p>Kimse ad yazmaz: oyuncular katılma sırasına göre numaralanır. Oturum sırasında cihazlar yalnızca oyunun gerektirdiği
+bilgileri paylaşır: oynanan oyun, her oyuncunun numarası, cevaplar (0 ile 100 arasında bir tam sayı ya da bir
+strateji) ve sonuçlar. Oturum yerel ağda koduyla duyurulur; bu yüzden yakında olan ve Uygulamaya sahip herkes onu
+bulup katılabilir. Bağlantı bu koddan türetilen bir anahtarla şifrelenir: bu, oturumları birbirinden ayırır ama bir
+oturumu yakındaki kişilerden gizlemez; bu yüzden gizli hiçbir şey için kullanmayın. Oyuncular yalnızca numaralandığı
+ve yalnızca oyun paylaşıldığı için bir oturumda kimseyi tanıtan bir bilgi bulunmaz. Uygulama
+oturumdan sonra hiçbir şey saklamaz: ne oturumu açanın ne de oyuncuların cihazında cevap, sonuç veya cihazlara dair bir
+bilgi kaydedilir ve bize hiçbir şey gönderilmez. Bir oturuma katılmak ücretsizdir ve hiçbir zaman reklam göstermez;
+Tam Erişim olmadan bir reklam bir oturum açmanın kilidini açar (4. bölüm).</p>
+
+<h2>6. Durumunu oyuna çevir: Apple Intelligence (2.0 sürümünden itibaren)</h2>
+<p>Apple Intelligence’ın bulunduğu ve açık olduğu cihazlarda bir durumu yazıp, iki oyuncuyu ve seçimlerini önermesi
+için Apple’ın cihaz üzerindeki dil modeline (Apple’ın Foundation Models çerçevesi) başvurabilirsiniz. Uygulama modele
+yalnızca yazdığınız metni verir. Model cihazınızda çalışır: Uygulama bu metni ne bize ne Google’a ne de başka birine
+gönderir ve saklamaz; sayfadan çıktığınızda silinir. Öneri yalnızca değiştirebileceğiniz bir başlangıç noktasıdır.
+Otomatik olarak yazılır, yanlış olabilir ve tarafımızdan kontrol edilmez; her sonucun ne kadar iyi olduğuna siz karar
+verirsiniz ve oyun Uygulamanın kendi kesin çözücüsüyle çözülür. Sayfayı her zaman elle de doldurabilirsiniz. Oyunu
+Çözücü’de açarsanız adları ve seçimleri, düzenlediğiniz her oyun gibi orada saklanır (2. bölüm). Apple’ın Apple
+Intelligence’ı nasıl işlediği <a href="https://www.apple.com/legal/privacy/tr/">Apple’ın Gizlilik Politikası</a>’nda
+açıklanır.</p>
+
+<h2>7. Bir çözümü paylaşmak</h2>
 <p><em>Paylaş</em>’a dokunduğunuzda Uygulama çözümün metnini iOS paylaşım ekranına verir. Nereye gideceğine siz
 karar verirsiniz (örneğin Mesajlar, Mail veya Notlar). Gönderdiğiniz içeriğe, seçtiğiniz uygulamanın veya
 hizmetin gizlilik politikası uygulanır. Uygulamanın kendisi hiçbir şey göndermez.</p>
 
-<h2>6. Apple’ın bize sağlayabileceği bilgiler</h2>
+<h2>8. Apple’ın bize sağlayabileceği bilgiler</h2>
 <p>Apple, geliştiricilere uygulamalarıyla ilgili toplu istatistikler sağlar (örneğin indirme sayısı). Cihaz
 ayarlarınızda analiz verilerini uygulama geliştiricileriyle paylaşmayı seçtiyseniz Apple ayrıca çökme raporları
 ve kullanım istatistikleri de sağlayabilir. Bu bilgilerden sizi tanımlayamayız; bu bilgiler Apple tarafından
 <a href="https://www.apple.com/tr/legal/privacy/">Apple Gizlilik Politikası</a> çerçevesinde işlenir. Biz bunları
 yalnızca sorunları bulup düzeltmek için kullanırız.</p>
 
-<h2>7. Bize e-posta ile ulaşırsanız</h2>
+<h2>9. Bize e-posta ile ulaşırsanız</h2>
 <p>Bize yazarsanız e-posta adresinizi ve mesajınızın içeriğini alırız. Bunları yalnızca size yanıt vermek ve
 bildirdiğiniz sorunları düzeltmek için, talebinize yanıt verme konusundaki meşru menfaatimize dayanarak kullanırız
 (6698 sayılı Kişisel Verilerin Korunması Kanunu “KVKK” m. 5/2-f; GDPR m. 6/1-f). Pazarlama amacıyla kullanmayız ve
@@ -126,13 +158,14 @@ kimseye aktarmayız. Yazışmayı artık gerekmediğinde, en geç son mesajımı
 Google’ın bir hizmeti olan Gmail üzerinden alırız; Google mesajları Türkiye dışındaki sunucularda saklayabilir.
 Lütfen özel nitelikli kişisel veri göndermeyin.</p>
 
-<h2>8. Çocuklar</h2>
+<h2>10. Çocuklar</h2>
 <p>Uygulama App Store’da 18+ derecelidir, çünkü isteğe bağlı reklamlar yetişkin kitleye yönelik içerik
-barındırabilir. Uygulama çocuklara yönelik değildir ve Uygulamadan bize hiç kimse hakkında kişisel bilgi ulaşmaz. Reklamlar yalnızca
+barındırabilir. Uygulama çocuklara yönelik değildir ve Uygulamadan bize hiç kimse hakkında kişisel bilgi ulaşmaz. Bir sınıf oturumuna
+katılmak hiçbir zaman reklam göstermez. Reklamlar yalnızca
 kullanıcı istediğinde gösterilir ve her reklam Uygulamadaki <em>Uygunsuz bir reklamı bildir</em> bağlantısıyla
 bildirilebilir. Bir çocuk bize yazarsa adresi yalnızca yanıt vermek için kullanır, ardından yazışmayı sileriz.</p>
 
-<h2>9. Haklarınız</h2>
+<h2>11. Haklarınız</h2>
 <p>Uygulamadan gelen kişisel veri tutmadığımız için normalde erişilecek, düzeltilecek veya silinecek bir veri
 yoktur. Bir reklam gösterildiğinde Google’ın topladığı veriler için, geçerli olduğu yerlerde Uygulamadaki
 <em>Reklam gizlilik tercihleri</em>’ni kullanın (bkz. 4. bölüm) veya 4. bölümde bağlantısı verilen sayfalardan
@@ -144,21 +177,24 @@ Koruma Kurumu’na veya yaşadığınız ülkenin veri koruma otoritesine şikâ
 Kaliforniya’da yaşayanlar için: kişisel bilgileri satmıyoruz; reklamlar için 4. bölümdeki reddetme seçeneği
 geçerlidir.</p>
 
-<h2>10. Güvenlik</h2>
+<h2>12. Güvenlik</h2>
 <p>Uygulama girdiğiniz oyunları ve ilerlemenizi bize veya başka birine iletmez; bunlar cihazınızda kalır, bir
-çözümün sonuçları ise eşlenmiş kendi Apple Watch’unuza aktarılabilir. Satın alım kayıtları
+çözümün sonuçları ise eşlenmiş kendi Apple Watch’unuza aktarılabilir. Sınıf oturumları, oturum kodundan türetilen
+bir anahtarla şifrelenerek doğrudan yakındaki cihazlar arasında yürür; şifreleme oturumu yakındakilerden
+gizlemez (5. bölüm). Satın alım kayıtları
 yalnızca cihazınız ile Apple arasında, Apple’ın şifreli bağlantısı üzerinden gidip gelir. Reklam istekleri
 cihazınızdan Google’a şifreli bağlantıyla gider; reklamın içeriği Google’ın veya onunla çalışan reklam şirketlerinin
 sunucularından gelebilir. Cihazınızda saklanan
 veriler iOS ve cihaz parolanız tarafından korunur.</p>
 
-<h2>11. Bu politikadaki değişiklikler</h2>
+<h2>13. Bu politikadaki değişiklikler</h2>
 <p>Bu politika değişirse yeni sürümü bu sayfada yayımlar ve yürürlük tarihini güncelleriz. Uygulamanın topladığı
 bilgiler değişirse, o sürüm yayımlanmadan önce bu politikayı ve App Store gizlilik bilgilerini güncelleriz. 30 Ekim
 2026 sürümü isteğe bağlı ödüllü reklamları (4. bölüm) ekledi; bu sürüm reklam iş ortaklarını, çerez ve benzeri
-teknolojileri ve seçimlerinizi daha ayrıntılı açıklar.</p>
+teknolojileri ve seçimlerinizi daha ayrıntılı açıklar. 2.0 sürümünden itibaren sınıf oturumlarını (5. bölüm) ve
+<em>Durumunu oyuna çevir</em>’i (6. bölüm) de açıklar.</p>
 
-<h2>12. İletişim</h2>
+<h2>14. İletişim</h2>
 <p>BME Apps · <a href="mailto:bme.support.univ@gmail.com">bme.support.univ@gmail.com</a></p>
 </main>
 <footer>
